@@ -35,6 +35,7 @@ class Dijsktra
     format_path
   end
 
+  # node: next_node
   def explore(node, cost, current)
     return if @visited.include?(node)
 

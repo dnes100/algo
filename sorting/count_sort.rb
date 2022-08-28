@@ -1,4 +1,3 @@
-require 'byebug'
 
 def count_sort(array)
   # Initializes counts with array.max elements, each element filled with 0
@@ -19,7 +18,6 @@ def count_sort(array)
   0.upto(counts.length - 2).each do |i|
     counts[i+1] = (counts[i] || 0) + (counts[i+1] || 0)
   end
-  byebug
 
   # insert elements in correct position in the result array based on cummulative frequency from counts array
   (array.length - 1).downto(0).each do |i|
